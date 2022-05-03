@@ -1,0 +1,12 @@
+{
+    "name": "imagebin",
+    "description": "One-click personal imagebin.",
+    "runtime": "python3.9",
+    "env": [
+        {
+            "key": "SECRET",
+            "description": "Random secret key",
+            "required": true 
+        }
+    ]
+}

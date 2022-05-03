@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block title %}Error!{% endblock %}
+
+{% block body %}
+    <h1>Ahhh. Error!</h1>
+    <p>Error: {{ error }}</p>
+    <a href="/"><button>Go back</button></a>
+    {% if code %}<p><b>Error code: {{ code }}</b></p>{% endif %}
+{% endblock %}
