@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Set{% endblock %}
+
+{% block body %}
+    <h1>Screenshot set</h1>
+    
+    {% if not set.images %}
+        Add here images...
+    {% endif %}
+    <div class="container">
+        <div class="row row-cols-2">
+            {% for image in set.images %}
+                <div class="col">
+                    <p>{{ image.comment }}</p>
+                    <img src="/raw/{{ image }}" class="img-fluid">
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock %}
